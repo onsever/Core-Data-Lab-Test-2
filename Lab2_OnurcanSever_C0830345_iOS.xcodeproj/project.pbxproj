@@ -14,6 +14,7 @@
 		BA90D464279F66B600370650 /* Lab2_OnurcanSever_C0830345_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA90D462279F66B600370650 /* Lab2_OnurcanSever_C0830345_iOS.xcdatamodeld */; };
 		BA90D466279F66B700370650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA90D465279F66B700370650 /* Assets.xcassets */; };
 		BA90D469279F66B700370650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA90D467279F66B700370650 /* LaunchScreen.storyboard */; };
+		BA90D474279F677B00370650 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA90D473279F677B00370650 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BA90D465279F66B700370650 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA90D468279F66B700370650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA90D46A279F66B700370650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA90D473279F677B00370650 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,14 +62,39 @@
 			children = (
 				BA90D459279F66B600370650 /* AppDelegate.swift */,
 				BA90D45B279F66B600370650 /* SceneDelegate.swift */,
-				BA90D45D279F66B600370650 /* ViewController.swift */,
-				BA90D45F279F66B600370650 /* Main.storyboard */,
+				BA90D470279F670A00370650 /* Model */,
+				BA90D471279F670E00370650 /* View */,
+				BA90D472279F671B00370650 /* Controller */,
 				BA90D465279F66B700370650 /* Assets.xcassets */,
-				BA90D467279F66B700370650 /* LaunchScreen.storyboard */,
 				BA90D46A279F66B700370650 /* Info.plist */,
-				BA90D462279F66B600370650 /* Lab2_OnurcanSever_C0830345_iOS.xcdatamodeld */,
 			);
 			path = Lab2_OnurcanSever_C0830345_iOS;
+			sourceTree = "<group>";
+		};
+		BA90D470279F670A00370650 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BA90D462279F66B600370650 /* Lab2_OnurcanSever_C0830345_iOS.xcdatamodeld */,
+				BA90D473279F677B00370650 /* Game.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BA90D471279F670E00370650 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BA90D45F279F66B600370650 /* Main.storyboard */,
+				BA90D467279F66B700370650 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BA90D472279F671B00370650 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA90D45D279F66B600370650 /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA90D45E279F66B600370650 /* ViewController.swift in Sources */,
+				BA90D474279F677B00370650 /* Game.swift in Sources */,
 				BA90D464279F66B600370650 /* Lab2_OnurcanSever_C0830345_iOS.xcdatamodeld in Sources */,
 				BA90D45A279F66B600370650 /* AppDelegate.swift in Sources */,
 				BA90D45C279F66B600370650 /* SceneDelegate.swift in Sources */,
