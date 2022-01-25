@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     private var selectedCell: UIButton?
     private var selectedCellArray = [Cell]()
     private var board = [Board]()
-    
     private var images = [Image]()
 
     private let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -37,7 +36,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         swipeToReset()
-        
+        game.currentPlayer = .none
         loadData()
         
         //loadImages()
@@ -46,6 +45,11 @@ class ViewController: UIViewController {
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         
         if event?.subtype == .motionShake {
+            
+            if game.currentPlayer == .none {
+                return
+            }
+            
             selectedCell?.setImage(nil, for: .normal)
             selectedCell?.setTitle("", for: .normal)
             selectedCell?.isEnabled = true

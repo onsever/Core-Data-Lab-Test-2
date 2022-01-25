@@ -20,6 +20,7 @@ struct Game {
     enum Player {
         case player1
         case player2
+        case none
     }
     
     enum Turn: String {
